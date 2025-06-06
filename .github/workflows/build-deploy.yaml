@@ -14,4 +14,3 @@ jobs:
       registry_username: amartinezot
     secrets:
       REGISTRY_TOKEN: ${{ secrets.REGISTRY_TOKEN }}
-      
