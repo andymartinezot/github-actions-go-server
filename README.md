@@ -79,7 +79,6 @@ Returns a greeting message with the server's hostname.
 - Normal response: `Hello from <hostname>!`
 - With `HEAVY_BUILD=true`: `Hello from <hostname>! (calculated <count> prime numbers during build)`
 
-
 ## Contributing
 
 1. Fork the repository
