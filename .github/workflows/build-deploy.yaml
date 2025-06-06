@@ -1,0 +1,16 @@
+name: My App Build and Deploy CI/CD
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    uses: andymartinezot/shared-workflows/.github/workflows/build-docker.yaml@main
+    with:
+      image_name: github-actions-go-server
+      dockerfile_path: ./Dockerfile
+      registry_username: amartinezot
+      secrets:
+        REGISTRY_TOKEN: ${{ secrets.REGISTRY_TOKEN }}
