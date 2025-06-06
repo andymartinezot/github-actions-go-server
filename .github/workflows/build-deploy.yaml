@@ -12,6 +12,6 @@ jobs:
       image_name: github-actions-go-server
       dockerfile_path: ./Dockerfile
       registry_username: amartinezot
-      secrets:
-        REGISTRY_TOKEN: ${{ secrets.REGISTRY_TOKEN }}
+    secrets:
+      REGISTRY_TOKEN: ${{ secrets.REGISTRY_TOKEN }}
         
